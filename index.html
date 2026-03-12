@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmácia do Caio | Cuidando de você!</title>
+    <meta name="description" content="A Farmácia do Caio é uma empresa dedicada ao cuidado com a saúde e ao bem-estar da população.">
+    <meta property="og:title" content="Farmácia do Caio">
+    <meta property="og:description" content="Cuidando de você! Produtos farmacêuticos, cosméticos e itens de higiene com qualidade e preços acessíveis.">
+    <meta property="og:image" content="https://farmaciadocaio.com.br/img/3.jpeg">
+    <meta property="og:url" content="https://farmaciadocaio.com.br">
+    <meta property="og:type" content="website">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1a3673',
+                        secondary: '#d32f2f'
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased overflow-x-hidden">
+
+    <header id="header" class="fixed w-full top-0 z-50 transition-transform duration-300 bg-white/70 backdrop-blur-md border-b border-white/20 shadow-sm">
+        <div class="container mx-auto px-4 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-2">
+                <img src="img/3.png" alt="Logo Farmácia do Caio" class="h-14 object-contain mix-blend-multiply">
+            </a>
+
+            <nav class="hidden md:flex gap-8 font-medium text-primary">
+                <a href="#inicio" class="hover:text-secondary transition-colors">Início</a>
+                <a href="#sobre" class="hover:text-secondary transition-colors">Sobre Nós</a>
+                <a href="#servicos" class="hover:text-secondary transition-colors">Serviços</a>
+                <a href="#galeria" class="hover:text-secondary transition-colors">Galeria</a>
+                <a href="#contato" class="hover:text-secondary transition-colors">Contato</a>
+            </nav>
+
+            <div class="hidden md:flex">
+                <a href="https://wa.me/551732751887" target="_blank" class="flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white px-5 py-2.5 rounded-full font-semibold transition-all shadow-lg shadow-green-500/30">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                    Peça pelo WhatsApp
+                </a>
+            </div>
+
+            <button id="menu-btn" class="md:hidden text-primary focus:outline-none p-2">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-white/95 backdrop-blur-md border-t border-slate-100 absolute w-full left-0 shadow-lg">
+            <div class="flex flex-col px-4 py-6 gap-4 font-medium text-primary text-center">
+                <a href="#inicio" class="mobile-link py-2 hover:bg-slate-50 rounded-lg">Início</a>
+                <a href="#sobre" class="mobile-link py-2 hover:bg-slate-50 rounded-lg">Sobre Nós</a>
+                <a href="#servicos" class="mobile-link py-2 hover:bg-slate-50 rounded-lg">Serviços</a>
+                <a href="#galeria" class="mobile-link py-2 hover:bg-slate-50 rounded-lg">Galeria</a>
+                <a href="#contato" class="mobile-link py-2 hover:bg-slate-50 rounded-lg">Contato</a>
+                <a href="https://wa.me/551732751887" target="_blank" class="flex items-center justify-center gap-2 bg-green-500 text-white py-3 rounded-xl mt-2">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                    Peça pelo WhatsApp
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section id="inicio" class="relative h-screen flex items-center justify-center text-center px-4 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="img/4.jpeg" alt="Fachada da Farmácia do Caio" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-primary/70 mix-blend-multiply"></div>
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent to-slate-900/90"></div>
+        </div>
+        
+        <div class="relative z-10 max-w-4xl mx-auto text-white mt-16 animate-fade-in-up">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 tracking-tight">Farmácia do Caio</h1>
+            <p class="text-xl md:text-3xl font-light mb-10 text-slate-200">Cuidando de você!</p>
+            <a href="https://wa.me/551732751887" target="_blank" class="inline-flex items-center gap-3 bg-secondary hover:bg-red-700 text-white px-8 py-4 rounded-full text-lg font-bold transition-transform hover:scale-105 shadow-xl shadow-secondary/40">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                Faça seu Pedido
+            </a>
+        </div>
+        
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce z-10 text-white/70">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+        </div>
+    </section>
+
+    <section id="sobre" class="py-24 bg-white">
+        <div class="container mx-auto px-4 max-w-4xl text-center">
+            <h2 class="text-4xl font-bold text-primary mb-10">Sobre Nós</h2>
+            <div class="space-y-6 text-lg text-slate-600 leading-relaxed text-justify md:text-center glass-panel p-8 md:p-12 rounded-3xl">
+                <p>A Farmácia do Caio é uma empresa dedicada ao cuidado com a saúde e ao bem-estar da população, oferecendo produtos farmacêuticos, cosméticos e itens de higiene com qualidade e preços acessíveis. A empresa atua no comércio varejista de medicamentos, sempre buscando atender seus clientes com responsabilidade, confiança e compromisso com a saúde.</p>
+                <p>Nosso objetivo é facilitar o acesso da comunidade a produtos essenciais para o dia a dia, garantindo atendimento humanizado e orientado para as necessidades de cada cliente. Trabalhamos com medicamentos, produtos de perfumaria, higiene pessoal e outros itens relacionados ao cuidado e à qualidade de vida.</p>
+                <p>A Farmácia do Caio acredita que saúde deve ser acessível a todos. Por isso, buscamos constantemente oferecer um atendimento próximo, preços justos e um ambiente confiável para que nossos clientes encontrem tudo o que precisam em um só lugar. Com seriedade, transparência e dedicação, seguimos trabalhando para ser uma referência em atendimento farmacêutico e conveniência para a comunidade.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicos" class="py-24 bg-slate-50 relative">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center text-primary mb-16">Nossos Serviços</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                
+                <div class="glass-panel p-10 rounded-3xl text-center hover:-translate-y-2 transition-transform duration-300">
+                    <div class="w-20 h-20 mx-auto bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-10 h-10 text-primary" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> <g fill="currentColor"> <path fill="none" d="M0 0H24V24H0z" /> <path d="M19 2v2h-2v3c1.657 0 3 1.343 3 3v11c0 .552-.448 1-1 1H5c-.552 0-1-.448-1-1V10c0-1.657 1.343-3 3-3V4H5V2h14zm-2 7H7c-.552 0-1 .448-1 1v10h12V10c0-.552-.448-1-1-1zm-4 2v2h2v2h-2.001L13 17h-2l-.001-2H9v-2h2v-2h2zm2-7H9v3h6V4z" /> </g> </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-800 mb-4">Medicamentos</h3>
+                    <p class="text-slate-600">Ampla variedade de medicamentos éticos e genéricos com o melhor preço para cuidar da sua saúde.</p>
+                </div>
+
+                <div class="glass-panel p-10 rounded-3xl text-center hover:-translate-y-2 transition-transform duration-300">
+                    <div class="w-20 h-20 mx-auto bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-10 h-10 text-primary" fill="currentColor" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 442 442" xml:space="preserve"> <g> <path d="M231.5,50.5c0-5.79-4.71-10.5-10.5-10.5c-5.79,0-10.5,4.71-10.5,10.5S215.21,61,221,61C226.79,61,231.5,56.29,231.5,50.5z" /> <path d="M346,163.682h-60V122c0-5.522-4.478-10-10-10h-10V10c0-5.523-4.478-10-10-10h-70c-5.523,0-10,4.477-10,10v102h-10 c-5.523,0-10,4.478-10,10v41.682H96c-11.028,0-20,8.972-20,20V422c0,11.028,8.972,20,20,20h250c11.028,0,20-8.972,20-20V183.682 C366,172.653,357.028,163.682,346,163.682z M196,20h50v92h-50V20z M96,422V183.682h70c5.523,0,10-4.477,10-10V132h35v71.682h-85 c-5.523,0-10,4.478-10,10V392c0,5.522,4.477,10,10,10h190c5.522,0,10-4.478,10-10v-60.892c0-5.522-4.478-10-10-10s-10,4.478-10,10 V382H136V223.682h75V352c0,5.522,4.477,10,10,10c5.523,0,10-4.478,10-10V223.682h75V297c0,5.522,4.478,10,10,10s10-4.478,10-10 v-83.318c0-5.522-4.478-10-10-10h-85V132h35v41.682c0,5.523,4.478,10,10,10h70L346.002,422H96z" /> </g> </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-800 mb-4">Perfumaria</h3>
+                    <p class="text-slate-600">Linha completa de cosméticos, produtos de higiene pessoal e beleza para o seu dia a dia.</p>
+                </div>
+
+                <div class="glass-panel p-10 rounded-3xl text-center hover:-translate-y-2 transition-transform duration-300">
+                    <div class="w-20 h-20 mx-auto bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-10 h-10 text-primary" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="10" cy="6" r="4" stroke="currentColor" stroke-width="1.5"/>
+                            <path d="M19 2C19 2 21 3.2 21 6C21 8.8 19 10 19 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                            <path d="M17 4C17 4 18 4.6 18 6C18 7.4 17 8 17 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                            <path d="M17.9975 18C18 17.8358 18 17.669 18 17.5C18 15.0147 14.4183 13 10 13C5.58172 13 2 15.0147 2 17.5C2 19.9853 2 22 10 22C12.231 22 13.8398 21.8433 15 21.5634" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-800 mb-4">Atendimento</h3>
+                    <p class="text-slate-600">Equipe qualificada e pronta para oferecer assistência humanizada e orientações de confiança.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="galeria" class="py-24 bg-white">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <h2 class="text-4xl font-bold text-center text-primary mb-16">Nossa Estrutura</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="overflow-hidden rounded-2xl shadow-lg aspect-[4/3] group cursor-pointer">
+                    <img src="img/4.jpeg" alt="Fachada da Farmácia" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="overflow-hidden rounded-2xl shadow-lg aspect-[4/3] group cursor-pointer">
+                    <img src="img/1.jpeg" alt="Interior da Farmácia 1" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="overflow-hidden rounded-2xl shadow-lg aspect-[4/3] group cursor-pointer">
+                    <img src="img/2.jpeg" alt="Interior da Farmácia 2" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="py-24 bg-slate-900 text-white relative">
+        <div class="absolute inset-0 bg-primary/20 mix-blend-overlay pointer-events-none"></div>
+        <div class="container mx-auto px-4 max-w-6xl relative z-10">
+            <h2 class="text-4xl font-bold text-center mb-16">Contato e Localização</h2>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
+                <div class="glass-panel-dark p-8 md:p-12 rounded-3xl flex flex-col justify-center space-y-8">
+                    <div>
+                        <h3 class="text-2xl font-bold text-slate-100 mb-6 border-b border-slate-700 pb-4">Dados da Empresa</h3>
+                        <ul class="space-y-4 text-slate-300">
+                            <li><strong class="text-white">Empresa:</strong> FARMACIA DO CAIO LTDA</li>
+                            <li><strong class="text-white">Nome Fantasia:</strong> FARMACIA DO CAIO</li>
+                            <li><strong class="text-white">CNPJ:</strong> 08.983.601/0001-73</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="text-2xl font-bold text-slate-100 mb-6 border-b border-slate-700 pb-4">Endereço e Contato</h3>
+                        <ul class="space-y-4 text-slate-300">
+                            <li class="flex items-start gap-3">
+                                <svg class="w-6 h-6 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                                <span>R BRASIL, 551<br>CENTRO<br>MONTE APRAZIVEL - SP<br>CEP: 15.150-000</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <svg class="w-6 h-6 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                                <span>(17) 3275-1887</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <svg class="w-6 h-6 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                                <span>CAIO-GADELHA@HOTMAIL.COM</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="h-[500px] lg:h-auto rounded-3xl overflow-hidden shadow-2xl glass-panel-dark border-0">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3731.839815049969!2d-49.7153406!3d-20.716805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94bda68a1837ff71%3A0x6b4fb7134de54ba2!2sR.%20Brasil%2C%20551%20-%20Centro%2C%20Monte%20Apraz%C3%ADvel%20-%20SP%2C%2015150-000!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-950 text-slate-400 py-8 text-center text-sm border-t border-slate-800">
+        <div class="container mx-auto px-4 flex flex-col items-center gap-4">
+            <p>&copy; <span id="year"></span> FARMACIA DO CAIO LTDA. Todos os direitos reservados.</p>
+            <p>CNPJ: 08.983.601/0001-73</p>
+            <button id="btn-privacy" class="hover:text-white transition-colors underline decoration-slate-600 underline-offset-4">Política de Privacidade</button>
+        </div>
+    </footer>
+
+    <div id="modal-privacy" class="fixed inset-0 z-[100] hidden items-center justify-center p-4 bg-slate-900/80 backdrop-blur-sm opacity-0 transition-opacity duration-300">
+        <div class="bg-white rounded-3xl p-8 max-w-2xl w-full max-h-[90vh] overflow-y-auto shadow-2xl transform scale-95 transition-transform duration-300" id="modal-content">
+            <div class="flex justify-between items-center mb-6">
+                <h3 class="text-2xl font-bold text-slate-800">Política de Privacidade</h3>
+                <button id="btn-close-modal" class="text-slate-400 hover:text-secondary focus:outline-none">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                </button>
+            </div>
+            <div class="space-y-4 text-slate-600">
+                <p>A Farmácia do Caio valoriza a sua privacidade e garante o sigilo das informações de nossos usuários. Esta política descreve como tratamos os dados em nosso site institucional.</p>
+                <p><strong>1. Coleta de Dados:</strong> Nosso site possui caráter estritamente informativo e não coleta dados pessoais automaticamente, como nomes ou e-mails, através de formulários nativos. O contato é realizado diretamente por meio de links externos, como o WhatsApp.</p>
+                <p><strong>2. Uso de Cookies:</strong> Podemos utilizar cookies básicos apenas para melhorar a experiência de navegação e garantir o funcionamento correto da página, sem rastreamento para fins publicitários invasivos.</p>
+                <p><strong>3. Compartilhamento de Informações:</strong> Como não armazenamos dados pessoais em nosso servidor através deste site, não há compartilhamento de informações com terceiros.</p>
+                <p><strong>4. Links Externos:</strong> Nosso site contém links para o WhatsApp. Ao utilizar este serviço, você estará sujeito aos termos e políticas de privacidade da própria plataforma (Meta).</p>
+                <p><strong>5. Alterações nesta Política:</strong> Reservamo-nos o direito de atualizar esta política a qualquer momento, mantendo a versão mais recente sempre disponível nesta página.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
